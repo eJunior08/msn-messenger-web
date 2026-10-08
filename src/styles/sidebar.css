@@ -1,0 +1,47 @@
+.sidebar { background: linear-gradient(155deg, var(--tint) 0, #f6fbff 180px, #fafcfe 350px); border-right: 1px solid #c7dae7; display: flex; flex-direction: column; min-height: 0; }
+.self-profile { display: flex; gap: 15px; padding: 27px 21px 0; align-items: center; }
+.avatar-button { padding: 0; }
+.self-copy { min-width: 0; }
+.profile-name { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; padding: 0; text-align: left; word-break: break-word; }
+.profile-name svg { color: #9db5c4; flex-shrink: 0; }
+.status-select { margin-top: 7px; display: flex; align-items: center; gap: 5px; color: #6d8c6d; }
+.status-select select { border: 0; background: transparent; font-size: 11px; max-width: 155px; cursor: pointer; }
+.personal-message { display: flex; align-items: center; gap: 5px; margin: 15px 21px 0; padding: 0; color: #849ca9; font-size: 11px; font-style: italic; text-align: left; }
+.personal-message svg { flex-shrink: 0; }
+.now-playing { display: flex; align-items: center; color: #5488a6; font-size: 9px; gap: 4px; margin: 16px 21px 20px; white-space: nowrap; }
+.now-playing svg { color: #79b150; flex-shrink: 0; margin-right: 3px; }
+.track-artist { color: #9aabb5; }
+.equalizer { display: flex; align-items: flex-end; gap: 2px; height: 10px; margin-left: auto; }
+.equalizer i { width: 2px; background: #7ab752; height: 5px; }
+.equalizer i:nth-child(2) { height: 10px; }
+.equalizer i:nth-child(3) { height: 7px; }
+.contacts-tools { display: flex; align-items: center; gap: 6px; border-top: 1px solid #dfeaf1; padding: 16px 14px 12px 20px; }
+.search-box { display: flex; gap: 7px; align-items: center; border: 1px solid #d1e0e9; background: white; padding: 8px 9px; border-radius: 5px; color: #94abb8; min-width: 0; box-shadow: inset 0 1px 2px #2b628507; }
+.search-box input { min-width: 0; width: 100%; border: 0; background: transparent; font-size: 11px; outline: 0; }
+.search-box:focus-within { border-color: #4fa6d3; box-shadow: 0 0 0 2px #c0e8ff; }
+.search-box input::placeholder { color: #9aabb7; }
+.search-box svg { flex-shrink: 0; }
+.search-box kbd { color: #b3c2cb; }
+.add-contact { padding: 6px; color: #659881; }
+.contacts-label { display: flex; justify-content: space-between; margin: 3px 22px 11px; font-size: 9px; letter-spacing: 1px; color: #8da2b2; }
+.contacts-label > span + span { letter-spacing: 0; color: #90a794; }
+.contact-scroll { overflow-y: auto; flex: 1; scrollbar-width: thin; scrollbar-color: #d5e3ec transparent; padding: 0 8px; }
+.contact-group { margin-bottom: 12px; }
+.group-heading { display: flex; gap: 6px; align-items: center; color: #68849a; font-weight: 600; font-size: 11px; width: 100%; padding: 6px 9px 8px; }
+.group-heading > span { margin-left: auto; color: #9db1be; font-weight: 400; font-size: 10px; padding-right: 7px; }
+.contact-row { display: flex; align-items: center; gap: 11px; width: 100%; padding: 10px 12px; text-align: left; border: 1px solid transparent; border-radius: 6px; min-width: 0; margin: 1px 0; }
+.contact-row:hover { background: #eef6fc; }
+.contact-row.selected { background: linear-gradient(100deg, #dbf0fe, #e7f4fc); border-color: #c1e0f5; box-shadow: inset 3px 0 #4aa6d8; }
+.contact-copy { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.contact-copy strong { font-size: 12px; font-weight: 600; color: #36556b; }
+.contact-copy > span { color: #94a4af; font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact-row.selected .contact-copy strong { color: #2275a8; }
+.unread { margin-left: auto; background: #2b9ed4; color: white; font-size: 10px; padding: 2px 5px; border-radius: 10px; }
+.sidebar-memory { margin: 10px 19px 16px; padding: 12px 10px; border: 1px solid #e0e9de; background: linear-gradient(125deg, #f3f8ed, #f8fbf7); display: flex; align-items: center; gap: 10px; border-radius: 6px; }
+.sidebar-memory > span { font-size: 29px; color: #9abe68; }
+.sidebar-memory strong { font-size: 9px; font-weight: 600; color: #839672; }
+.sidebar-memory p { font-size: 8px; color: #9aa992; margin-top: 5px; }
+.sidebar-footer { display: flex; justify-content: space-between; padding: 10px 19px; background: #eff5f9; border-top: 1px solid #dce7ef; }
+.sidebar-footer button { display: flex; align-items: center; gap: 7px; color: #7f98aa; font-size: 10px; padding: 2px; }
+.empty-contacts { text-align: center; color: #7f99a9; padding: 30px 15px; font-size: 12px; }
+.empty-contacts p { margin: 10px 0; }

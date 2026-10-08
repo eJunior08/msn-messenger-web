@@ -1,0 +1,25 @@
+.composer-area { padding: 5px 25px 14px; flex-shrink: 0; }
+.composer { border: 1px solid #bfd9e8; border-radius: 8px; box-shadow: 0 2px 5px #20578008; background: white; }
+.composer:focus-within { border-color: #7bb8d9; box-shadow: 0 0 0 2px #d5edf955; }
+.composer-toolbar { height: 38px; display: flex; align-items: center; gap: 5px; background: linear-gradient(#f7fbfd, #f0f6fa); padding: 0 9px; border-bottom: 1px solid #e0eaf1; border-radius: 8px 8px 0 0; }
+.composer-toolbar button { color: #6f8aa0; display: flex; align-items: center; justify-content: center; gap: 3px; padding: 5px; border-radius: 4px; }
+.composer-toolbar button:hover, .composer-toolbar button.active { background: #dbeefa; color: #297fae; }
+.toolbar-divider { height: 15px; width: 1px; background: #d8e4ed; margin: 0 4px; }
+.emoji-icon { color: #d7a636; fill: #ffef97; }
+.wink-icon { color: #a796c5; }
+.composer-toolbar .nudge-button { font-size: 10px; gap: 5px; }
+.nudge-button svg { color: #c09c60; }
+.composer-font { margin-left: auto; color: #a6b5c0; font-size: 9px; padding: 0 5px; }
+.composer textarea { resize: none; border: none; outline: none; width: 100%; height: 68px; padding: 14px 15px; background: transparent; font-size: 12px; line-height: 1.6; display: block; }
+.composer textarea::placeholder { color: #a6b6c2; }
+.composer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 0 11px 10px 15px; }
+.composer-bottom > span { font-size: 9px; color: #b0bcc5; }
+.send-button { border: 1px solid #168fc9; border-radius: 5px; background: linear-gradient(color-mix(in srgb, var(--accent) 75%, white), var(--accent)); color: white; font-size: 11px; font-weight: 600; padding: 8px 17px; display: flex; gap: 11px; align-items: center; box-shadow: inset 0 1px #ffffff40, 0 2px 3px #3199ca15; }
+.send-button:hover:not(:disabled) { color: white; background: #168bc9; }
+.send-button:disabled { opacity: .6; }
+.composer-hint { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; gap: 8px; font-size: 8px; color: #a9b8c4; }
+.composer-hint kbd { font: inherit; }
+.tiny-heart { color: #b7bacc; margin-left: 3px; }
+.emoji-control { position: relative; }
+.emoji-picker { position: absolute; bottom: 36px; left: -25px; width: 190px; display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px; background: white; border: 1px solid #c3ddea; box-shadow: 0 4px 20px #31557225; border-radius: 8px; z-index: 10; }
+.emoji-picker button { font-size: 23px; padding: 5px; }

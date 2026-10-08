@@ -1,0 +1,92 @@
+@media (min-width: 1500px) {
+  .app-header { height: 120px; }
+  .messenger-window { height: min(850px, calc(100dvh - 180px)); grid-template-columns: 325px minmax(0, 1fr); }
+  .contact-row { padding-block: 12px; }
+  .messages { padding: 35px 45px; }
+  .message-bubble { font-size: 13px; }
+}
+@media (max-width: 1100px) {
+  .app { padding-inline: 24px; }
+  .header-tagline { display: none; }
+  .messenger-window { grid-template-columns: 270px minmax(0, 1fr); }
+  .self-profile { padding-left: 18px; gap: 12px; }
+  .profile-name { font-size: 16px; }
+  .track-artist { display: none; }
+  .conversation-header { padding-inline: 20px; }
+  .conversation-strip { padding-inline: 20px; }
+  .messages { padding-inline: 23px; }
+  .message-row { max-width: 95%; }
+  .composer-hint > span + span { display: none; }
+  .sidebar-memory { margin-inline: 14px; }
+}
+@media (max-width: 760px) {
+  .app { padding: 0 12px; }
+  .app-header { height: 76px; }
+  .brand { font-size: 24px; gap: 7px; }
+  .brand .buddy-logo { transform: scale(.85); transform-origin: right; width: 42px; }
+  .header-right { gap: 7px; }
+  .header-heart { display: none; }
+  .demo-badge { font-size: 8px; letter-spacing: .8px; }
+  .messenger-window { height: calc(100dvh - 120px); min-height: 430px; grid-template-columns: 1fr; border-radius: 9px; }
+  .sidebar { border-right: 0; }
+  .chat-workspace { display: none; }
+  .show-chat .sidebar { display: none; }
+  .show-chat .chat-workspace { display: flex; }
+  .mobile-back { display: inline-flex; margin-left: -8px; padding: 5px; }
+  .self-profile { padding: 23px 22px 0; }
+  .profile-name { font-size: 20px; }
+  .personal-message { margin-left: 23px; }
+  .now-playing { margin-left: 23px; margin-bottom: 17px; font-size: 10px; }
+  .track-artist { display: inline; }
+  .equalizer { margin-left: 10px; }
+  .search-box { flex: 1; padding: 11px; }
+  .search-box input { font-size: 12px; }
+  .contact-row { padding-block: 12px; gap: 15px; }
+  .contact-copy strong { font-size: 13px; }
+  .contact-copy > span { font-size: 11px; }
+  .sidebar-memory { display: none; }
+  .sidebar-footer { padding-block: 13px; }
+  .app-footer { height: 44px; justify-content: center; font-size: 8px; }
+  .app-footer > span:first-child, .app-footer > span:last-child { display: none; }
+  .conversation-tabs { height: 38px; }
+  .tabs-note { display: none; }
+  .conversation-header { padding: 16px 12px; gap: 10px; min-height: 83px; }
+  .conversation-person h1 { font-size: 14px; gap: 6px; }
+  .conversation-person p { font-size: 10px; max-width: 210px; }
+  .status-pill { font-size: 8px; padding: 2px 4px; }
+  .favorite-button { display: none; }
+  .conversation-strip { padding: 9px 13px; font-size: 8px; }
+  .conversation-strip button { font-size: 9px; }
+  .conversation-strip > span { max-width: 65%; }
+  .messages { padding: 23px 16px 10px; }
+  .conversation-start > span { font-size: 7px; letter-spacing: 1.3px; }
+  .safety-note { font-size: 8px; line-height: 1.6; text-align: center; }
+  .message-row { max-width: 100%; gap: 9px; margin-bottom: 19px; }
+  .message-row .avatar-small { width: 28px; height: 28px; font-size: 18px; }
+  .message-bubble { font-size: 12px; padding: 10px 12px; }
+  .message-meta { font-size: 9px; }
+  .message-meta time { font-size: 8px; }
+  .continued { margin-top: -10px; }
+  .composer-area { padding: 5px 12px 12px; }
+  .composer textarea { height: 65px; font-size: 16px; }
+  .composer-font { display: none; }
+  .composer-hint { font-size: 8px; }
+  .composer-bottom > span { font-size: 8px; }
+  .composer-toolbar { gap: 6px; }
+  .composer-toolbar button { padding: 6px; }
+  .dialog-form input, .dialog-form select { font-size: 16px; }
+  .signin-page { padding: 15px; }
+  .signin-card { padding: 30px 25px; }
+  .signin-card h1 { font-size: 24px; }
+}
+@media (max-height: 650px) and (min-width: 761px) {
+  .app-header { height: 70px; }
+  .messenger-window { min-height: 460px; height: calc(100dvh - 105px); }
+  .app-footer { height: 35px; }
+  .sidebar-memory { display: none; }
+  .self-profile { padding-top: 16px; }
+  .now-playing { margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
